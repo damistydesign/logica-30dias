@@ -29,7 +29,7 @@ const productsJson = [
     },
     {
         title: 'Laptop',
-        price: 10.000,
+        price: 10000,
         id: 3
     },
     {
@@ -48,10 +48,12 @@ const products = [];
 
 const handleAddProduct = (event) => {
     let product = event.target.parentElement;
-    let siblingProduct = event.target.previousElementSibling.innerText;
+    const siblingProduct = event.target.previousElementSibling.previousElementSibling.innerText;
+    const siblingPrice = event.target.previousElementSibling.innerText;
 
     products.push({
         title: siblingProduct,
+        price: Number.parseInt(siblingPrice),
         id: product.id
     })
 
@@ -62,7 +64,10 @@ const handleAddProduct = (event) => {
 productsMapped = productsJson.map( (product) => {
     return `<div class='card' id='${product.id}'>
                 <strong>
-                    ${product.title} - $${product.price}
+                    ${product.title}
+                </strong>
+                <strong>
+                    ${product.price}
                 </strong>
                 <button onclick='handleAddProduct(event)'>
                     Añadir al carrito
@@ -87,10 +92,19 @@ const handleRemove = (event) => {
 let updateCart = () => 
     {
         cartList.innerHTML = '';
+
+        let totalPrice = 0;
+        const total = products.forEach((product) => {
+            totalPrice += product.price;
+        })
+
         let cartProducts = products.map((product) => {
         return `<li id='${product.id}'>
             <strong>
                 ${product.title}
+            </strong>
+            <strong>
+                ${product.price}
             </strong>
             <button onclick='handleRemove(event)'>
                 <svg width="30" height="30">
@@ -103,10 +117,15 @@ let updateCart = () =>
                 </g>
                 </svg>
             </button>
-        </li>`
+        </li> 
+        `
     })
     
-    cartList.innerHTML += cartProducts.join('');
+    
+
+    console.log(totalPrice)
+
+    cartList.innerHTML += cartProducts.join('') + `<br><strong> Total $${totalPrice}</strong>`;
 
     if (products.length) {
     cartContainer.classList.add('visible');
