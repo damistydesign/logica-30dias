@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Email Con Regex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="" id="form">
+        <header>
+            <h2>Login</h2>
+        </header>
+        <div class="inputs">
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="inputs">
+            <label for="password">Your Password:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <button type="submit" id='btn__submit'>Send</button>
+    </form>
+    <div class="error" id="error__container">
+    </div>
+    <div class="success" id="succes__container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
