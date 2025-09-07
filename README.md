@@ -12,24 +12,24 @@ Todo está estructurado en formato de árbol para facilitar la navegación y el 
 ```plaintext
 Week 1
 ├── Day 1
-│   ├── 01 - Inverted_array                 → 09/03/2025  
-│   ├── 02 - Largest_Number_In_The_Array   → 09/03/2025  
-│   ├── 03 - VocalCount                    → 09/03/2025  
-│   └── 04 - EvenNumbers                   → 09/03/2025  
+│   ├── 01 - Inverted_array                     → 09/03/2025  
+│   ├── 02 - Largest_Number_In_The_Array        → 09/03/2025  
+│   ├── 03 - VocalCount                         → 09/03/2025  
+│   └── 04 - EvenNumbers                        → 09/03/2025  
 ├── Day 2
-│   └── 05 - RandomPasswordGenerator       → 09/04/2025  
+│   └── 05 - RandomPasswordGenerator            → 09/04/2025  
 
 Week 2
 ├── Day 1
-│   ├── 01 - Login Falso                   → 09/05/2025  
-│   └── 02 - SortByAgeInArray             → 09/05/2025  
+│   ├── 01 - Login Falso                        → 09/05/2025  
+│   └── 02 - SortByAgeInArray                   → 09/05/2025  
 ├── Day 2
-│   ├── 03 - Carrito de Compras           → 09/06/2025  
-│   └── 04 - Email Regex Validación       → 09/07/2025  
+│   ├── 03 - Carrito de Compras                 → 09/06/2025  
+│   └── 04 - Email Regex Validación             → 09/07/2025  
 
 Week 3
 │── Day 1
-    └── 01 - Generador de Memes           → 09/07/2025  
+    └── 01 - Generador de Chistes aleatorio     → 09/07/2025  
 ```
 
 # 📂 Estructura del Repo
