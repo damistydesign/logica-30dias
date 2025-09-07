@@ -26,8 +26,10 @@ Week 2
 ├── Day 2
 │   ├── 03 - Carrito de Compras           → 09/06/2025  
 │   └── 04 - Email Regex Validación       → 09/07/2025  
-└── Day 3
-    └── 05 - Generador de Memes           → 09/07/2025  
+
+Week 3
+│── Day 1
+    └── 01 - Generador de Memes           → 09/07/2025  
 ```
 
 # 📂 Estructura del Repo
