@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>
+        Conversor de Divisas
+    </h1>
+    <main class="from" id="mainForm">
+            <label for="monto" class="montoText">Monto:</label>
+            <input type="number" name="monto" id="monto">
+            <section class="selections__currency">
+                <label for="fromCurrency">De:</label>
+                <select name="from" id="fromCurrency">
+                    <option value="USD">Dólares Americanos</option>
+                    <option value="UYU">Pesos Uruguayos</option>
+                    <option value="ARS">Pesos Argentinos</option>
+                    <option value="EUR">Euros</option>
+                </select>
+                <label for="toCurrency">A:</label>
+                <select name="to" id="toCurrency">
+                    <option value="USD">Dólares Americanos</option>
+                    <option value="UYU">Pesos Uruguayos</option>
+                    <option value="ARS">Pesos Argentinos</option>
+                    <option value="EUR">Euros</option>
+                </select>
+            </section>
+            <button type="submit" id="btn__submit">Convertir</button>
+            <span id="result">$0.00</span>
+    </main>
+    <div id="error">
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
