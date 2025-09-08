@@ -29,7 +29,8 @@ Week 2
 
 Week 3
 │── Day 1
-    └── 01 - Generador de Chistes aleatorio     → 09/07/2025  
+│   │── 01 - Generador de Chistes aleatorio     → 09/07/2025  
+│   └── 02 - Exchange Currencys                 → 09/07/2025
 ```
 
 # 📂 Estructura del Repo
